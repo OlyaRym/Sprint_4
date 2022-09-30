@@ -16,8 +16,6 @@ public class QuestionsAboutImportant {
     //локатор на куки
     private By coocky = By.id("rcc-confirm-button");
     // вебдрайвер в вопросах о важном
-
-
     public QuestionsAboutImportant(WebDriver driver){
         this.driver = driver;
     }

@@ -12,8 +12,6 @@ public class QuestionsAboutImportantNumberSeven {
     private By coocky = By.id("rcc-confirm-button");
     private By cancelTheOrder = By.id("accordion__heading-6");
     private By answerCancelTheOrder = By.xpath(".//div[@id='accordion__panel-6']/p");
-
-
     // вебдрайвер в вопросах о важном
     public QuestionsAboutImportantNumberSeven (WebDriver driver){
         this.driver = driver;

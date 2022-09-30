@@ -12,8 +12,6 @@ public class QuestionsAboutImportantNumberFive {
     private By coocky = By.id("rcc-confirm-button");
     private By extendOrRefund = By.id("accordion__heading-4");
     private By answerExtendOrRefund = By.xpath(".//div[@id='accordion__panel-4']/p");
-
-
     // вебдрайвер в вопросах о важном
     public QuestionsAboutImportantNumberFive (WebDriver driver){
         this.driver = driver;

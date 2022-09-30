@@ -7,13 +7,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.firefox.FirefoxDriver;
-
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.junit.Assert.assertEquals;
 
 public class OrderingScooter {
     private WebDriver driver;
-
     @Before
     public void startUp() {
         WebDriverManager.chromedriver().setup();
@@ -219,7 +217,6 @@ public class OrderingScooter {
         MatcherAssert.assertThat(aboutRent.isPopUpWindow(), containsString("Заказ оформлен"));
     }
 
-
     //тесты для первого задания "Вопросы о важном" на все 8 вопросов
     @Test
     public void importantQuestionsAndAnswers() {
@@ -231,7 +228,6 @@ public class OrderingScooter {
         questionsAboutImportant.findCostPayment();
         questionsAboutImportant.scroll();
         questionsAboutImportant.clicCostPayment();
-
         assertEquals("Сутки — 400 рублей. Оплата курьеру — наличными или картой.", questionsAboutImportant.isquestionPage());
     }
     @Test
@@ -244,7 +240,6 @@ public class OrderingScooter {
         questionsAboutImportantNumberTwo.findSeveralScooters();
         questionsAboutImportantNumberTwo.scroll();
         questionsAboutImportantNumberTwo.clicSeveralScooter();
-
         assertEquals("Пока что у нас так: один заказ — один самокат. Если хотите покататься с друзьями, можете просто сделать несколько заказов — один за другим.", questionsAboutImportantNumberTwo.isAnswerSeveralScooters());
 
     }

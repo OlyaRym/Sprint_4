@@ -22,7 +22,6 @@ public class WhoIsTheScooterFor {
     private By telephone = By.xpath(".//input[@placeholder='* Телефон: на него позвонит курьер']");
     // кнопка далее
     private By next = By.xpath(".//button[@class='Button_Button__ra12g Button_Middle__1CSJM']");
-
     public WhoIsTheScooterFor(WebDriver driver) {
         this.driver = driver;
     }
@@ -39,7 +38,6 @@ public class WhoIsTheScooterFor {
     public void setMetroStation(String metroStation) {
         driver.findElement(metro).sendKeys(metroStation);
         driver.findElement(dropDownList).click();
-
     }
     public void setTelephoneNumber(String telephoneNumber) {
         driver.findElement(telephone).sendKeys(telephoneNumber);
@@ -50,7 +48,6 @@ public class WhoIsTheScooterFor {
         new WebDriverWait(driver,3)
                 .until(ExpectedConditions.elementToBeClickable(next)).click();
     }
-
     public void login(String username, String surName,String addressHouse, String metroStation,String telephoneNumber){
         setUsername(username);
         setSurName(surName);
