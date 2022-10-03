@@ -16,7 +16,8 @@ public class MainPage {
     public MainPage(WebDriver driver){
         this.driver = driver;
     } //метод драйвер
-     public void open(){
+
+    public void open(){
         driver.get(PAGE_URL);
 }  //метод для открытия сайта
     public void clickOrderTop() {

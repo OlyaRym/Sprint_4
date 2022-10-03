@@ -173,5 +173,4 @@ public class QuestionsAboutImportant {
     public String isAnswerMkad(){
         return driver.findElement(answerMkad).getText();
     }
-
 }

@@ -13,7 +13,7 @@ public class AboutRent {
     //локатор для клика по полю когда привезти и ожидание,чтобы загрузилось
     public By whenToBringAScooter = By.xpath(".//input[@placeholder='* Когда привезти самокат']");
     //локатор для календыря и даты
-    public By calendar = By.xpath(".//div[@class='react-datepicker__day react-datepicker__day--002 react-datepicker__day--weekend react-datepicker__day--outside-month']");
+    public By calendar = By.xpath(".//div[@class='react-datepicker__day react-datepicker__day--013']");
     //локатор для срока аренды
     public By rentalPeriod = By.xpath(".//div[@class='Dropdown-placeholder']");
     //локатор для выбора времени аренды

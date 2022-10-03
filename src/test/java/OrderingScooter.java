@@ -14,10 +14,8 @@ public class OrderingScooter {
     @Before
     public void startUp() {
         WebDriverManager.chromedriver().setup();
+        WebDriverManager.firefoxdriver().setup();
     }
-    @Before
-    public void startUpMoz(){WebDriverManager.firefoxdriver().setup();}
-
     //Тесты на проверку Заказ самоката
     //Тесты в гугл 2 набора данных, кнопка заказать вверху
     @Test

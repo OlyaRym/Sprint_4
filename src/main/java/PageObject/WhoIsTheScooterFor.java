@@ -25,6 +25,7 @@ public class WhoIsTheScooterFor {
     public WhoIsTheScooterFor(WebDriver driver) {
         this.driver = driver;
     }
+
     //методы для заполнения формы
     public void setUsername(String userName) {
         driver.findElement(firstName).sendKeys(userName);
