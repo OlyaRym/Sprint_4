@@ -12,8 +12,6 @@ public class QuestionsAboutImportantNumberTwo {
     //private By answerSeveralScooters = By.cssSelector("div.accordion__panel > id='accordion__panel-1' > p");
     private By answerSeveralScooters = By.xpath(".//div[@id='accordion__panel-1']/p");
     private By coocky = By.id("rcc-confirm-button");
-
-
     // вебдрайвер в вопросах о важном
     public QuestionsAboutImportantNumberTwo (WebDriver driver){
         this.driver = driver;

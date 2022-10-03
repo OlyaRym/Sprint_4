@@ -12,8 +12,6 @@ public class QuestionsAboutImportantNumberEight {
     private By coocky = By.id("rcc-confirm-button");
     private By mkad = By.id("accordion__heading-7");
     private By answerMkad = By.xpath(".//div[@id='accordion__panel-7']/p");
-
-
     // вебдрайвер в вопросах о важном
     public QuestionsAboutImportantNumberEight (WebDriver driver){
         this.driver = driver;
